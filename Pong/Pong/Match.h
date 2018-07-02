@@ -9,6 +9,8 @@ public:
 	void Update(double dt);
 	void Close();
 
+	Sprite *racket;
+	Sprite *ball;
 	~Match();
 };
 
