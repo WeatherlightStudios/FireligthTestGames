@@ -1,7 +1,7 @@
 #include "Game.h"
 
 
-Game::Game() : App("Pong", 800, 600)
+Game::Game()
 {
 }
 

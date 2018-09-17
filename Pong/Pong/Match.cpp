@@ -29,6 +29,15 @@ void Match::Init() {
 	auto var1 = Resource::LoadTexture("resources/Sprites/Pong_White.png", true, "PongSprite");
 	auto var2 = Resource::LoadShader("resources/Shaders/2D_shader.vert", "resources/Shaders/2D_shader.frag", NULL,"sha_Basic2D");
 	
+	World::addGameSystem(new MovementSystem());
+	ball = World::CreateEntity();
+	ball->add_Component<Transform>(glm::vec3(0, 0, 0), 0 , glm::vec2(1, 1));
+	ball->add_Component<MoveComponent>(ballSpeed, ballDir);
+	ball->add_Component<MeshRender>();
+	ball->add_Component<Sprite>(var1, var2, 2 , 1, 0, 0, 75, 75);
+
+
+	/*
 	for (int i = 0; i < 1000; i++) {
 		ball = new Sprite(var1, var2, 2, 1);
 		
@@ -41,7 +50,6 @@ void Match::Init() {
 	}
 	
 	
-	/*
 	racket1 = new Sprite(var1, var2, 2, 1);
 	racket1->setOffset(1, 0);
 	racket1->translate(300,0,0);
@@ -94,7 +102,7 @@ void Match::Update() {
 	*/
 	
 }
-
+/*
 void Match::CollisionWithRackets() {
 	glm::vec3 ballNextPos = ball->local_position() + glm::normalize(ballDir)*ballSpeed;
 
@@ -143,6 +151,7 @@ void Match::CollisionWithWalls() {
 		ballDir.y *= -1;//ball->set_local_position(glm::vec3(ball->local_position().x, -1.2f + ballSize.y, ball->local_position().z));
 	}
 }
+*/
 
 void Match::Close() {
 

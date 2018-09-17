@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FireLight",
+    "\\FireLight\\FireLight",
+    "\\FireLight\\FireLight\\src",
+    "\\FireLight\\FireLight\\src\\Core",
+    "\\FireLight\\FireLight\\src\\Core\\ECS",
+    "\\FireLight\\FireLight\\src\\Core\\ECS\\Components"
+  ],
+  "SelectedNode": "\\FireLight\\FireLight\\src\\Core\\ECS\\Component.cpp",
+  "PreviewInSolutionExplorer": false
+}

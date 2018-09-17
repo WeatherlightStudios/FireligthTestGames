@@ -1,21 +1,34 @@
-﻿  Match.cpp
-c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\pong\pong\match.cpp(39): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-FireLight.lib(stb_image_aug.obj) : warning LNK4099: impossibile trovare il PDB 'SOIL.pdb' con 'FireLight.lib(stb_image_aug.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\SOIL.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(SOIL.obj) : warning LNK4099: impossibile trovare il PDB 'SOIL.pdb' con 'FireLight.lib(SOIL.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\SOIL.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(image_helper.obj) : warning LNK4099: impossibile trovare il PDB 'SOIL.pdb' con 'FireLight.lib(image_helper.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\SOIL.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(image_DXT.obj) : warning LNK4099: impossibile trovare il PDB 'SOIL.pdb' con 'FireLight.lib(image_DXT.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\SOIL.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(egl_context.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(egl_context.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(wgl_context.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(wgl_context.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(win32_window.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(win32_window.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(win32_tls.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(win32_tls.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(win32_time.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(win32_time.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(win32_monitor.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(win32_monitor.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(win32_joystick.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(win32_joystick.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(win32_init.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(win32_init.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(window.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(window.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(vulkan.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(vulkan.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(monitor.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(monitor.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(input.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(input.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(init.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(init.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-FireLight.lib(context.obj) : warning LNK4099: impossibile trovare il PDB 'glfw.pdb' con 'FireLight.lib(context.obj)' o in 'C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\glfw.pdb'; oggetto collegato senza informazioni di debug
-  Pong.vcxproj -> C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\Pong.exe
+﻿  Game.cpp
+c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\firelight\firelight\src\core\ecs\world.h(182): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+  main.cpp
+c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\firelight\firelight\src\core\ecs\world.h(182): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+  Match.cpp
+c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\firelight\firelight\src\core\ecs\world.h(182): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\firelight\firelight\src\core\ecs\world.h(135): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+  c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\pong\pong\match.cpp(34): note: vedere il riferimento all'istanza '<Sconosciuto>' della funzione <Sconosciuto> di cui è in corso la compilazione
+c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\firelight\firelight\src\core\ecs\world.h(54): warning C4267: '=': conversione da 'size_t' a 'ComponentID'. Possibile perdita di dati.
+  c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\firelight\firelight\src\core\ecs\world.h(134): note: vedere il riferimento all'istanza '<Sconosciuto>' della funzione <Sconosciuto> di cui è in corso la compilazione
+  c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\pong\pong\match.cpp(34): note: vedere il riferimento all'istanza '<Sconosciuto>' della funzione <Sconosciuto> di cui è in corso la compilazione
+  MovementSystem.cpp
+c:\users\utente\desktop\projects\gamedev projects\fireligthtestgames\firelight\firelight\src\core\ecs\world.h(182): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+  Generazione del codice in corso...
+FireLight.lib(SimpleRenderSystem.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(imgui.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(imgui_draw.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(Time.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(Texture.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(Shader.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(SceneNode.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(Scene.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(Window.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(PysixSystem.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(imgui_impl_glfw_gl3.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(World.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(IndexBuffer.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(VertexBuffer.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(Resource.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(App.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(SceneManager.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(gl3w.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+FireLight.lib(Component.obj) : error LNK2001: simbolo esterno __CheckForDebuggerJustMyCode non risolto
+C:\Users\Utente\Desktop\Projects\GameDev Projects\FireligthTestGames\Pong\x64\Debug\Pong.exe : fatal error LNK1120: 1 esterni non risolti
