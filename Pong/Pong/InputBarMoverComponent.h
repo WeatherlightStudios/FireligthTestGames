@@ -3,8 +3,9 @@
 struct InputBarMoverComponent : public Component<InputBarMoverComponent>
 {
 
-	InputBarMoverComponent(float speed):
-	speed(speed) { }
+	InputBarMoverComponent(float speed, float barHeight):
+	speed(speed), barHeight(barHeight) { }
 
 	float speed;
+	float barHeight;
 };

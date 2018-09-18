@@ -126,6 +126,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Match.cpp" />
     <ClCompile Include="MovementSystem.cpp" />
+    <ClCompile Include="RacketAISystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
@@ -134,6 +135,8 @@
     <ClInclude Include="Match.h" />
     <ClInclude Include="MoveComponent.h" />
     <ClInclude Include="MovementSystem.h" />
+    <ClInclude Include="RacketAIComp.h" />
+    <ClInclude Include="RacketAISystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

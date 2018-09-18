@@ -30,6 +30,9 @@
     <ClCompile Include="InputBarMoverSystem.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="RacketAISystem.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -48,6 +51,12 @@
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="InputBarMoverComponent.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="RacketAISystem.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="RacketAIComp.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>

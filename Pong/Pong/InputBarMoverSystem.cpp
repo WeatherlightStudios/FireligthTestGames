@@ -1,5 +1,5 @@
 #include "InputBarMoverSystem.h"
-
+#include <iostream>
 
 
 InputBarMoverSystem::InputBarMoverSystem()
@@ -15,7 +15,9 @@ void InputBarMoverSystem::Init() {
 void InputBarMoverSystem::Update(std::vector<BaseComponent*> components) {
 	Transform* transform = (Transform*)components[0];
 	InputBarMoverComponent* mover = (InputBarMoverComponent*)components[1];
-
+	
+	std::cout << transform->position.x << std::endl;
+	/*
 	glm::vec3 pos = transform->position;
 	glm::vec3 dir = glm::vec3(0, 0, 0);
 	float speed = mover->speed;
@@ -30,10 +32,15 @@ void InputBarMoverSystem::Update(std::vector<BaseComponent*> components) {
 	pos += dir * speed * (float)Time::GetDeltaTime();
 
 	glm::vec2 scale = transform->scale;
-	if (pos.y + scale.y > Window::getHeight()/ 2.0f) {
-		pos.y = Window::getHeight()/2.0f;
+	if (pos.y + scale.y * mover->barHeight / 2.0f > Window::getHeight()/ 2.0f && dir.y > 0) {
+		pos.y = Window::getHeight()/2.0f - scale.y * mover->barHeight / 2.0f;
 	}
+	if (pos.y - scale.y * mover->barHeight / 2.0f < -Window::getHeight() / 2.0f && dir.y < 0) {
+		pos.y = -Window::getHeight() / 2.0f + scale.y * mover->barHeight / 2.0f;
+	}
+
 	transform->position = pos;
+	*/
 }
 
 InputBarMoverSystem::~InputBarMoverSystem()

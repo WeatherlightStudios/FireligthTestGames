@@ -4,6 +4,8 @@
 #include "MoveComponent.h"
 #include "InputBarMoverSystem.h"
 #include "InputBarMoverComponent.h"
+#include "RacketAIComp.h"
+#include "RacketAISystem.h"
 class Match : public Scene
 {
 public:
@@ -18,10 +20,12 @@ private:
 	EntityHandler *ball;
 
 	
-	float ballSpeed = 10;
+	float ballSpeed = 100;
 	glm::vec3 ballDir = glm::vec3(-.25f, .75f, 0);
+	float ballRadius = 7.5f;
 	
 	float racketSpeed = 75;
+	float barHeight = 48;
 
 	//void CollisionWithWalls();
 	//void CollisionWithRackets();

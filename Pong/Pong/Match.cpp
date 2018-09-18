@@ -34,6 +34,7 @@ void Match::Init() {
 	//added custom game system to world
 	World::addGameSystem(new MovementSystem());
 	World::addGameSystem(new InputBarMoverSystem());
+	World::addGameSystem(new RacketAISystem());
 
 	///BALL///
 	//created empty entity from world
@@ -42,7 +43,7 @@ void Match::Init() {
 	//added component transform with initialyzation (vec3 position, float angle, vec2 scale)
 	ball->add_Component<Transform>(glm::vec3(0, 0, 0), 0 , glm::vec2(2, 2));
 	//added component custom with initialyzation
-	ball->add_Component<MoveComponent>(ballSpeed, ballDir);
+	ball->add_Component<MoveComponent>(ballSpeed, ballDir, ballRadius, true);
 	//added component sprite(texture, shader, x and y divisions in texture, x and y offset in texture
 	//,x and y pixel size of the sprite (will get automatically calculated)
 	//N.B. add first Sprite then MeshRenderer
@@ -53,17 +54,24 @@ void Match::Init() {
 	racket1 = World::CreateEntity();
 
 	racket1->add_Component<Transform>(glm::vec3(-200, 0, 0), 0, glm::vec2(2, 2));
-	racket1->add_Component<InputBarMoverComponent>(racketSpeed);
+	racket1->add_Component<InputBarMoverComponent>(racketSpeed, barHeight);
 	racket1->add_Component<Sprite>(text, shad, 2, 1, 1, 0, 64 / 2, 64 / 1);
 	racket1->add_Component<MeshRender>();
 
+	racket2 = World::CreateEntity();
 
-	
+	racket2->add_Component<Transform>(glm::vec3(200, 0, 0), 0, glm::vec2(2, 2));
+	/*
+	racket2->add_Component<RacketAIComp>(racketSpeed, barHeight);
+	racket2->add_Component<Sprite>(text, shad, 2, 1, 1, 0, 64 / 2, 64 / 1);
+	racket2->add_Component<MeshRender>();
+	*/
 }
 
 
 void Match::Update() {
 	
+	//racket2->getComponent<RacketAIComp>()->ballpos = ball->getComponent<Transform>()->position;
 
 	/*
 
