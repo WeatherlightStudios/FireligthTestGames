@@ -122,12 +122,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="InputBarMoverSystem.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Match.cpp" />
     <ClCompile Include="MovementSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="InputBarMoverComponent.h" />
+    <ClInclude Include="InputBarMoverSystem.h" />
     <ClInclude Include="Match.h" />
     <ClInclude Include="MoveComponent.h" />
     <ClInclude Include="MovementSystem.h" />
