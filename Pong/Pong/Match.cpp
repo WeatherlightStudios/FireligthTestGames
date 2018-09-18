@@ -29,8 +29,7 @@ void Match::Init() {
 	//get texture
 	auto text = Resource::LoadTexture("resources/Sprites/Pong_White.png", true, "PongSprite");
 	//get shader
-	auto shad = Resource::LoadShader("resources/Shaders/2D_shader.vert", "resources/Shaders/2D_shader.frag", NULL,"sha_Basic2D");
-	
+	//auto shad = Resource::LoadShader("resources/Shaders/2D_shader.vert", "resources/Shaders/2D_shader.frag", NULL,"sha_Basic2D");
 	//added custom game system to world
 	World::addGameSystem(new MovementSystem());
 	World::addGameSystem(new InputBarMoverSystem());
@@ -47,7 +46,7 @@ void Match::Init() {
 	//added component sprite(texture, shader, x and y divisions in texture, x and y offset in texture
 	//,x and y pixel size of the sprite (will get automatically calculated)
 	//N.B. add first Sprite then MeshRenderer
-	ball->add_Component<Sprite>(text, shad, 2 , 1, 0, 0, 64/2, 64/1);
+	//ball->add_Component<Sprite>(text, shad, 2 , 1, 0, 0, 64/2, 64/1);
 	ball->add_Component<MeshRender>();
 
 
@@ -55,12 +54,14 @@ void Match::Init() {
 
 	racket1->add_Component<Transform>(glm::vec3(-200, 0, 0), 0, glm::vec2(2, 2));
 	racket1->add_Component<InputBarMoverComponent>(racketSpeed, barHeight);
-	racket1->add_Component<Sprite>(text, shad, 2, 1, 1, 0, 64 / 2, 64 / 1);
+	//racket1->add_Component<Sprite>(text, shad, 2, 1, 1, 0, 64 / 2, 64 / 1);
 	racket1->add_Component<MeshRender>();
 
 	racket2 = World::CreateEntity();
 
 	racket2->add_Component<Transform>(glm::vec3(200, 0, 0), 0, glm::vec2(2, 2));
+	/*
+	*/
 	/*
 	racket2->add_Component<RacketAIComp>(racketSpeed, barHeight);
 	racket2->add_Component<Sprite>(text, shad, 2, 1, 1, 0, 64 / 2, 64 / 1);

@@ -16,8 +16,7 @@ void InputBarMoverSystem::Update(std::vector<BaseComponent*> components) {
 	Transform* transform = (Transform*)components[0];
 	InputBarMoverComponent* mover = (InputBarMoverComponent*)components[1];
 	
-	std::cout << transform->position.x << std::endl;
-	/*
+	//std::cout << transform->position.x << std::endl;
 	glm::vec3 pos = transform->position;
 	glm::vec3 dir = glm::vec3(0, 0, 0);
 	float speed = mover->speed;
@@ -40,6 +39,7 @@ void InputBarMoverSystem::Update(std::vector<BaseComponent*> components) {
 	}
 
 	transform->position = pos;
+	/*
 	*/
 }
 
