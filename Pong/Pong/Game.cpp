@@ -11,6 +11,7 @@ void Game::Init() {
 	SceneManager::change_current_scene_to("Match Scene");
 }
 
+
 Game::~Game()
 {
 }

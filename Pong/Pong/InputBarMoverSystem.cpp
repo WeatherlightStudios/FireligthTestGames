@@ -7,6 +7,7 @@ InputBarMoverSystem::InputBarMoverSystem()
 }
 
 void InputBarMoverSystem::Init() {
+	std::cout << "Init di InputBarMoverSystem" << std::endl;
 	registerComponent<Transform>();
 	registerComponent<InputBarMoverComponent>();
 }

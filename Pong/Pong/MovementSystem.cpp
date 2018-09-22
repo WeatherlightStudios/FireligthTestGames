@@ -7,6 +7,7 @@ MovementSystem::MovementSystem()
 }
 
 void MovementSystem::Init() {
+	std::cout << "Init di MovementSystem" << std::endl;
 	registerComponent<MoveComponent>();
 	registerComponent<Transform>();
 }
@@ -17,6 +18,8 @@ void MovementSystem::Update(std::vector<BaseComponent*> components) {
 	if (!moveComp->enabled) {
 		return;
 	}
+
+	std::cout << "updated" << std::endl;
 
 	Transform* transform = (Transform*)components[1];
 

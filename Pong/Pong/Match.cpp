@@ -1,35 +1,17 @@
 #include "Match.h"
 
 
-
 Match::Match()
 {
 
 }
-
-
-/*
-	auto var1 = Resource::Shader("resources/Shaders/2D_shader.vert", "resources/Shaders/2D_shader.frag", NULL,"sha_Basic2D");
-	auto var2 = Resource::Texture("resources/Sprites/Pong_White.png", true, "PongSprite");
-
-	racket1 = new Sprite(var2, var1, 2, 1, 1, 0);
-	racket2 = new Sprite(var2, var1, 2, 1, 1, 0);
-	ball = new Sprite(var2, var1, 2, 1, 0, 0);
-
-	racket1->translate(glm::vec3(1,0,0));
-	racket2->translate(glm::vec3(-1,0,0));
-
-	this->add_object(*racket1);
-	this->add_object(*racket2);
-	this->add_object(*ball);
-*/
 
 void Match::Init() {
 	
 	//get texture
 	auto text = Resource::LoadTexture("resources/Sprites/Pong_White.png", true, "PongSprite");
 	//get shader
-	//auto shad = Resource::LoadShader("resources/Shaders/2D_shader.vert", "resources/Shaders/2D_shader.frag", NULL,"sha_Basic2D");
+	auto shad = Resource::LoadShader("resources/Shaders/2D_shader.vert", "resources/Shaders/2D_shader.frag", NULL,"sha_Basic2D");
 	//added custom game system to world
 	World::addGameSystem(new MovementSystem());
 	World::addGameSystem(new InputBarMoverSystem());
@@ -46,7 +28,7 @@ void Match::Init() {
 	//added component sprite(texture, shader, x and y divisions in texture, x and y offset in texture
 	//,x and y pixel size of the sprite (will get automatically calculated)
 	//N.B. add first Sprite then MeshRenderer
-	//ball->add_Component<Sprite>(text, shad, 2 , 1, 0, 0, 64/2, 64/1);
+	ball->add_Component<Sprite>(text, shad, 2 , 1, 0, 0, 64/2, 64/1);
 	ball->add_Component<MeshRender>();
 
 
@@ -54,18 +36,16 @@ void Match::Init() {
 
 	racket1->add_Component<Transform>(glm::vec3(-200, 0, 0), 0, glm::vec2(2, 2));
 	racket1->add_Component<InputBarMoverComponent>(racketSpeed, barHeight);
-	//racket1->add_Component<Sprite>(text, shad, 2, 1, 1, 0, 64 / 2, 64 / 1);
+	racket1->add_Component<Sprite>(text, shad, 2, 1, 1, 0, 64 / 2, 64 / 1);
 	racket1->add_Component<MeshRender>();
-
 	racket2 = World::CreateEntity();
 
 	racket2->add_Component<Transform>(glm::vec3(200, 0, 0), 0, glm::vec2(2, 2));
-	/*
-	*/
-	/*
+	
 	racket2->add_Component<RacketAIComp>(racketSpeed, barHeight);
 	racket2->add_Component<Sprite>(text, shad, 2, 1, 1, 0, 64 / 2, 64 / 1);
 	racket2->add_Component<MeshRender>();
+	/*
 	*/
 }
 
