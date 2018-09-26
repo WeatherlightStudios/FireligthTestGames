@@ -69,6 +69,11 @@ void Match::Init() {
 void Match::Update() {
 	racket2->getComponent<RacketAIComp>()->ballpos = ball->getComponent<Transform>()->position;
 	racket1->getComponent<RacketAIComp>()->ballpos = ball->getComponent<Transform>()->position;
+
+
+	float numb = RandomNumber::GaussianRange(0, 100);
+	std::cout << numb << std::endl;
+
 }
 
 void Match::Close() {
