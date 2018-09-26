@@ -7,7 +7,7 @@ InputBarMoverSystem::InputBarMoverSystem()
 }
 
 void InputBarMoverSystem::Init() {
-	std::cout << "Init di InputBarMoverSystem" << std::endl;
+	//std::cout << "Init di InputBarMoverSystem" << std::endl;
 	registerComponent<Transform>();
 	registerComponent<InputBarMoverComponent>();
 }
@@ -28,6 +28,7 @@ void InputBarMoverSystem::Update(std::vector<BaseComponent*> components) {
 	if (Window::isKeyDown(GLFW_KEY_S)) {
 		dir += glm::vec3(0, -1, 0);
 	}
+	mover->dir = dir;
 
 	pos += dir * speed * (float)Time::GetDeltaTime();
 

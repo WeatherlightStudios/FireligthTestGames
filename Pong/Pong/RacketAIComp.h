@@ -8,4 +8,5 @@ struct RacketAIComp : public Component<RacketAIComp>{
 	float barHeight;
 	float speed;
 	glm::vec3 ballpos;
+	glm::vec3 moveDir;
 };

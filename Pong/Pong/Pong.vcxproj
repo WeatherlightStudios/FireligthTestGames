@@ -121,6 +121,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BallPhysicsSystem.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="InputBarMoverSystem.cpp" />
     <ClCompile Include="main.cpp" />
@@ -129,6 +130,8 @@
     <ClCompile Include="RacketAISystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BallPhysicsComponent.h" />
+    <ClInclude Include="BallPhysicsSystem.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="InputBarMoverComponent.h" />
     <ClInclude Include="InputBarMoverSystem.h" />

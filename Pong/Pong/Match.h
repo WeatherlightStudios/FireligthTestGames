@@ -1,11 +1,9 @@
 #pragma once
 #include <FireLight.h>
 #include "MovementSystem.h"
-#include "MoveComponent.h"
 #include "InputBarMoverSystem.h"
-#include "InputBarMoverComponent.h"
-#include "RacketAIComp.h"
 #include "RacketAISystem.h"
+#include "BallPhysicsSystem.h"
 class Match : public Scene
 {
 public:

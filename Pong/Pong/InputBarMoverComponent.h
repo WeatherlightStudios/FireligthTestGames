@@ -8,4 +8,5 @@ struct InputBarMoverComponent : public Component<InputBarMoverComponent>
 
 	float speed;
 	float barHeight;
+	glm::vec3 dir;
 };
