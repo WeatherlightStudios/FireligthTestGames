@@ -7,11 +7,12 @@ Match::Match()
 }
 
 void Match::Init() {
-	
 	//get texture
 	auto text = Resource::LoadTexture("resources/Sprites/Pong_White.png", true, "PongSprite");
 	//get shader
 	auto shad = Resource::LoadShader("resources/Shaders/2D_shader.vert", "resources/Shaders/2D_shader.frag", NULL,"sha_Basic2D");
+
+
 	//added custom game system to world
 	World::addGameSystem(new MovementSystem());
 	World::addGameSystem(new InputBarMoverSystem());
@@ -61,19 +62,17 @@ void Match::Init() {
 		6,
 		(&racket2->getComponent<RacketAIComp>()->moveDir),
 		racketSpeed);
+	
+	
 
-	//ball->add_Component<BallPhysicsComponent>(racket1->getComponent<Transform>(), racket1->getComponent<InputBarMoverComponent>(), 6, 7.5f * 2.0f);
 }
 
 
 void Match::Update() {
+	
 	racket2->getComponent<RacketAIComp>()->ballpos = ball->getComponent<Transform>()->position;
 	racket1->getComponent<RacketAIComp>()->ballpos = ball->getComponent<Transform>()->position;
-
-
-	float numb = RandomNumber::GaussianRange(0, 100);
-	std::cout << numb << std::endl;
-
+	
 }
 
 void Match::Close() {
